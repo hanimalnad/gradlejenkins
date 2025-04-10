@@ -10,7 +10,7 @@ steps{
 git branch: 'master' , url:'https://github.com/hanimalnad/gradlejenkins.git'
 }
 }
-stage('Build){
+stage('Build'){
 steps{
 sh 'gradle build'
 }
