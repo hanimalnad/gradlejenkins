@@ -15,7 +15,7 @@ steps{
 sh 'gradle build'
 }
 }
-stage('Test')
+stage('Test'){
 steps{
 sh 'gradle test'
 }
@@ -32,5 +32,6 @@ echo 'Build and deployment successful!'
 }
 failure{
 echo 'Build failed!'
+}
 }
 }
